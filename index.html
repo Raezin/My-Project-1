@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent Us</title>
+
+    <!-- --- Bootstrap --- -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- --- css style sheets included --- -->
+
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/responsinvestyle.css" />
+  </head>
+  <body>
+
+    <!-- header contain navbar in it. it is a custom design navbar using bootstrap navbar as base.
+     -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-logo" href="#">Rent Us</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-underline nav-font">
+              <li class="nav-item">
+                <a class="nav-link" href="#intro">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#offering">Offerings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item signinbutton">
+              
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn custom-button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loggincheck()">
+  <span id="username">Sign In</span> 
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+  </svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SIGN IN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="login-form">
+          <div class="login-entity-container">
+            <label>Enter Your Email</label>
+            <input type="text" name="" id="guestemail">
+          </div>
+
+          <div class="login-entity-container">
+            <label>Enter Your Password</label>
+            <input type="password" name="" id="guestpassword">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn custom-button" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn custom-button" onclick="verifyemail()">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+            
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main section starts here where there are all the sections covered in the nav bar -->
+
+    <main>
+        <!-- section 1: Introduction -->
+        <div class="container-fluid bg-white" id="intro">
+          <div class="row">
+            <div class="col intro">
+              <div class="intro-text">
+                <div class="intro-text-container">
+                  <h1>Start your journey here!</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium enim sit quos,
+                  </p>
+
+                  <ul>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                        <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                      </svg>
+                      consectetur eius consequuntur
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                      </svg>
+                      j vel eum velit delectus?
+                    </li>
+                  </ul>
+
+                  <div class="d-flex justify-content-around intro-button">
+                    <div class="button">
+                        <a href="#offering" class="custom-button">
+                          Book Now
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="#about" class="custom-button">
+                          About Us 
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col intro-pic">
+              <div><img src="Images/bg1.jpg" alt="" width="100%" class="img-fluid intro-bgpic"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+                <hr class="border border-dark border-2 opacity-75">
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <!-- section 2: About Us -->
+        <div class="container-fluid bg-white" id="about">
+          <div class="row">
+            <div class="col about-head d-flex justify-content-center">
+              <span class="border-bottom border-dark border-2">
+                <h1>About Us</h1>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col service">
+              <div>
+                <h4>Why RentUs?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus qui tempora sint harum rerum veritatis dolorum. Maiores, dolorum itaque!</p>
+                <br>
+                <h4>Our Mission:</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo animi sed quos cupiditate necessitatibus nesciunt nulla at possimus ea.</p>
+                <br>
+                <h4>Experience RentUs</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique atque voluptatum molestiae voluptatibus aliquid repellendus unde distinctio excepturi cupiditate.</p>
+              </div>
+            </div>
+
+
+            <div class="col slider">
+              <div class="img-slider"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <div class="text-white">
+                <h1 id="loc">0+</h1>
+                <p>Locations</p>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="text-white">
+                <h1 id="hot">100000+</h1>
+                <p>Hotels</p>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="text-white">
+                <h1 id="rid">7000000+</h1>
+                <p>Rides</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section 3: Offerings -->
+
+        <div class="container-fluid bg-white" id="offering">
+          <div class="row">
+            <div class="col about-head d-flex justify-content-center">
+              <span class="border-bottom border-dark border-2">
+                <h1>Offerings</h1>
+            </div>
+          </div><br>
+
+
+          <div class="row d-flex justify-content-around align-items-center">
+          <div class="col-md-4 sm-12">
+
+              <!-- Card 1 -->
+              <div class="custom-card">
+              <div class="card">
+                <img src="Images/murree-tour.jpg" height="150vh" width="100%" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Murree Tour</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a class="btn custom-button" onclick="loginfirst()">For More...</a>
+                </div>
+              </div> 
+            </div>
+            </div>
+
+            <div class="col-md-4 sm-12">
+              <!-- Card 2 -->
+              <div class="custom-card">
+                <div class="card">
+                  <img src="Images/kalarkahar-tour.jpg" height="150vh" width="100%" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Kalar Kahar Tour</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="btn custom-button" onclick="loginfirst()">For More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 sm-12">
+              <!-- Card 3 -->
+              <div class="custom-card">
+                <div class="card">
+                  <img src="Images/ranaresort-tour.jpg" height="150vh" width="100%" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rana Resort Tour</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="btn custom-button" onclick="loginfirst()">For More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+
+          </div>
+
+
+
+        <!-- section 4:Reviews -->
+
+
+        <div class="container-fluid review" id="review">
+          <div class="row">
+            <div class="col about-head d-flex justify-content-center">
+              <span class="border-bottom border-white border-2">
+                <h1 class="text-white">Reviews</h1>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 md-12 d-flex justify-content-around align-items-center">
+              <div class="review-container">
+                <div class="d-flex justify-content-around align-items-center mb-3 ">
+                  <div class="review-photo"></div>
+  
+                  <h4>Rewiewer Name
+                    <div class="rating-responsive">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill checked" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                    </div>
+                  </h4>
+
+                  <div class="rating">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill checked" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                </div>
+
+
+                <p class="ps-4 pe-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, laudantium labore aliquid distinctio corrupti autem pariatur deserunt expedita rerum quaerat, sint voluptatibus, aut voluptate eum? Placeat quibusdam labore atque recusandae.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 md-12 d-flex justify-content-around align-items-center">
+              <div class="review-container">
+
+                <div class="d-flex justify-content-around align-items-center mb-3 ">
+                  <div class="review-photo"></div>
+  
+                  <h4>Rewiewer Name
+                    <div class="rating-responsive">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill checked" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                    </div>
+                  </h4>
+
+                  <div class="rating">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill checked" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                </div>
+
+
+                <p class="ps-4 pe-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, laudantium labore aliquid distinctio corrupti autem pariatur deserunt expedita rerum quaerat, sint voluptatibus, aut voluptate eum? Placeat quibusdam labore atque recusandae.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- section 5: FAQ -->
+        <div class="container-fluid bg-white" id="faq">
+          <div class="row">
+            <div class="col about-head d-flex justify-content-center">
+              <span class="border-bottom border-dark border-2">
+                <h1>Frequently Asked Questions</h1>
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col faq">
+              <ol>
+                <li>
+                  <h4>How can I book a bus ticket?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vero illum modi itaque velit quibusdam, exercitationem quos. Pariatur, harum modi sunt porro veniam dolorum repellendus qui, magni, quia inventore minus.</p>
+                </li>
+                <li>
+                  <h4>What are your bus schedules and routes?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eaque numquam reprehenderit quasi, totam maiores facilis ipsum placeat nesciunt sunt, error dolores aut nobis quo laboriosam consectetur distinctio! Consectetur, tempora!</p>
+                </li>
+                <li>
+                  <h4>Do you offer any discounts or promotions for frequent travelers?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis error voluptate odit ipsa neque exercitationem consequuntur aut, nesciunt debitis? Nemo consequatur minima quam mollitia, laborum cum, numquam placeat magnam officiis eos, ipsam tempore? Laborum.</p>
+                </li>
+                <li>
+                  <h4>Can I change or cancel my bus ticket reservation?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum accusantium ex ipsam ea culpa!</p>
+                </li>
+                <li>
+                  <h4>Are there any luggage restrictions?</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, in vero. Minus explicabo fugiat perspiciatis est ea? Rerum, dolorum perferendis?</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <div class="container-fluid footer" id="contact">
+        <div class="row">
+          <div class="col">
+            <div class="about-head d-flex justify-content-center">
+              <span class="border-bottom border-white border-2">
+                <h1 class="text-white">Thanks to our Sponsers</h1>
+              </span>
+            </div>
+            <div class="d-flex justify-content-around">
+              <img src="Images/img1.jpg" class="sponser" alt="">
+              <img src="Images/img2.jpg" class="sponser" alt="">
+              <img src="Images/img3.jpg" class="sponser" alt="">
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="about-head d-flex justify-content-center">
+              <span class="border-bottom border-white border-2">
+                <h1 class="text-white">Contact Us</h1>
+              </span>
+            </div>
+
+            <div style="text-align: center; color: white;">
+              <p>For Help, Contact us through following means,</p>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+                abc@gmail.com
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                034832941809
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                &ensp;&ensp;
+                042342543
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                &ensp;&ensp;
+                042325235
+              </div>
+              <div>Thanks For Cooperation.</div>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="col text-white d-flex justify-content-around">
+            &copy; All rights are reserved to Raezin.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- all the script included in the file is here -->
+
+    <script src="Script/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

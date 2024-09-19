@@ -1,0 +1,84 @@
+
+/* for sm size */
+@media only screen and (max-width: 576px) {
+
+    
+     /* introduction page responsive code */
+     .intro-text-container{
+        width: 100%;
+    }
+
+    .intro-button{
+        justify-content: space-between;
+    }
+
+    /* card in offering section responsive styling */
+
+
+    .rating{
+        display: none;
+    }
+    .rating-responsive{
+        display: block;
+    }
+
+    .sponser{
+        height: 11vh;
+    }
+
+    .login-form{
+        padding: 10px;
+    }
+
+    .login-entity-container{
+        flex-wrap: wrap;
+    }
+
+    .login-entity-container input{
+        width: 100%;
+    }
+}
+
+/* for md size */
+@media only screen and (max-width: 768px) {
+
+    /* introduction page responsive code */
+
+    .intro-pic{
+        display: none;
+    }
+
+    .intro-text-container{
+        width: 60%;
+    }
+
+    /* about us page code */
+    
+
+    .slider{
+        display: none;
+    }
+
+    /* card in offering section responsive styling */
+
+
+}
+
+/* for lg size */
+@media only screen and (max-width: 992px) {
+    
+    /* img slider coding */
+
+    .img-slider{
+        height: 40vh;
+    }
+
+
+    /* card in offering section responsive styling */
+
+   
+
+    .review-contaniner{
+        width: 60%;
+    }
+}
